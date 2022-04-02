@@ -1,0 +1,42 @@
+
+<html>
+    <head>
+        <title>Toy Recognition</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    
+       <link rel="stylesheet" href="style.css">
+       <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+      </head>
+    
+    <body>
+        <h1>Toy Recognition App</h1>
+        <h3>Model is trained to identify these Toys:</h3>
+        <b class="object_names">
+            <h1 style="width: 150px; height: 50px; font-size: 25px; font-weight: 900;" class="btn btn-primary">Pikachu</h1>
+            <br>
+            <h1 style="width: 150px; height: 50px; font-size: 25px; font-weight: 900;" class="btn btn-primary">Aligator</h1>
+            <br>
+            <h1 style="width: 150px; height: 50px; font-size: 25px; font-weight: 900;" class="btn btn-primary">Pig</h1>
+            <br>
+            <h1 style="width: 150px; height: 50px; font-size: 25px; font-weight: 900;" class="btn btn-primary">Monster</h1>
+            
+        </b>
+        <div id="camera"></div>
+        <div id="output"></div>
+<br>
+
+        <button id="capture_button" onclick="take_snapshot()" class="btn btn-danger">Capture Image</button>
+        <br>
+        <br>
+        <button id="identify_button" onclick="check()" class="btn btn-danger">Identify Image</button>
+        
+<br>
+        
+        <script src="main.js"></script>
+    </body>
+</html>
